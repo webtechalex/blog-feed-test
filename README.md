@@ -1,5 +1,27 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Test Instructions
+
+You have been given a small React application called blog feed. It currently displays a list of blog articles, each item containing the title and body of the article. FYI, the data comes from the 'posts' resource on the [jsonplaceholder](https://jsonplaceholder.typicode.com/) API.
+
+Your task is to extend this application to consume data from the 'comments' resource at the above API.
+
+User stories:
+1. Each post displays a button labelled "Show Comments" underneath the post body
+2. When I click the button, I see the comments for that post under the aforementioned button.
+3. Each comment displays the name, email and body data from the comment data
+4. When comments are visible on a post, the button displays "Hide Comments"
+5. When I click the button again, the comments are hidden
+
+Notes:
+- Show/hide behaviour for comments on each post are independent of the behaviour for other posts (I can show as many or as few comment lists as I like at any given time).
+- Ideally, I don't want to have to re-fetch comments I have already loaded previously, but you should also assume that this is a real-time application and comments can be updated while hidden. How will you handle that scenario?
+
+Advice:
+- Keep it simple. We want to see well composed components with properties and methods that have semantic names. Show that you know how to abstract application logic into small, maintainable components.
+- Think first - code later. It might help to draw up a simple [component hierarchy](https://reactjs.org/docs/thinking-in-react.html) to help you understand what components you might need to create and how they relate to each other before you start building anything. Think about what state you need to keep and what props you might need pass down the tree.
+- Reduce complexity. If you are not sure how to handle some complex requirement, break it down to something simpler and code that. Solving a simpler problem can often offer insight into a tougher one.
+
 ## Available Scripts
 
 In the project directory, you can run:
